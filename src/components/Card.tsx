@@ -11,10 +11,10 @@ interface TProps extends TCard {
   handleDelete: (_id: string) => void;
 }
 
-const Card: FC<TProps> = ({ _id, isDeleted, number, handleDelete }) => {
+const Card: FC<TProps> = ({ _id, number, handleDelete }) => {
   return (
     <>
-      {!isDeleted ? (
+      {(
         <div className="card">
           <div className="h1_center">
             <h1>{number}</h1>
@@ -22,7 +22,7 @@ const Card: FC<TProps> = ({ _id, isDeleted, number, handleDelete }) => {
 
           <button onClick={() => handleDelete(_id)}>X</button>
         </div>
-      ) : null}
+      )}
     </>
   );
 };
