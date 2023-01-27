@@ -4,7 +4,6 @@ import "./card.css";
 export interface TCard {
   _id: string;
   number: number;
-  isDeleted: boolean;
 }
 
 interface TProps extends TCard {

@@ -11,7 +11,6 @@ export const reducer = (state: TCard[], action: TActions): TCard[] => {
         {
           _id: uuid(),
           number: payload,
-          isDeleted: false,
         },
       ];
     }
