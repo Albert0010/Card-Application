@@ -1,0 +1,25 @@
+.card{
+    height: 200px;
+    width: 45%;
+    border: 1px solid black;
+    margin: 5px;
+    position: relative;
+}
+.h1_center{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card > button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background:none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+}
